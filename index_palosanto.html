@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ozzi — Upcoming Shows</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes ozzi-marquee-loop {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(-50%, 0, 0); }
+    }
+    .ozzi-marquee {
+      width: 100%;
+      overflow: hidden;
+    }
+    .ozzi-marquee-track {
+      display: flex;
+      width: max-content;
+      will-change: transform;
+      animation: ozzi-marquee-loop 18s linear infinite;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+    }
+    .ozzi-marquee-group {
+      min-width: 100vw;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body class="bg-white text-black antialiased flex flex-col min-h-screen justify-between">
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur">
+    <div class="relative w-full border-b border-black/10 bg-white/80">
+      <div class="ozzi-marquee" aria-label="Moving OZZI marquee">
+        <div class="ozzi-marquee-track">
+          <div class="ozzi-marquee-group">
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+          </div>
+          <div class="ozzi-marquee-group" aria-hidden="true">
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+            <span class="uppercase tracking-wide text-xs sm:text-sm">OZZI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="mx-auto w-full max-w-3xl px-8">
+    <h2 class="mt-16 text-xl font-semibold uppercase text-center">Upcoming Shows</h2>
+    <ul class="mt-6 mb-24">
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">Littlefield</span>
+        <span class="sm:col-span-1 text-center">November 18, 2023</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">B Club</span>
+        <span class="sm:col-span-1 text-center">January 17, 2024</span>
+        <span class="sm:col-span-1 text-center sm:text-right">London, UK</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">Basing House</span>
+        <span class="sm:col-span-1 text-center">February 21, 2024</span>
+        <span class="sm:col-span-1 text-center sm:text-right">London, UK</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">B Club</span>
+        <span class="sm:col-span-1 text-center">April 12, 2024</span>
+        <span class="sm:col-span-1 text-center sm:text-right">London, UK</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">Stereo</span>
+        <span class="sm:col-span-1 text-center">April 18, 2024</span>
+        <span class="sm:col-span-1 text-center sm:text-right">London, UK</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">Somewhere Nowhere</span>
+        <span class="sm:col-span-1 text-center">July 4, 2024</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">Arlo Brooklyn Hotel</span>
+        <span class="sm:col-span-1 text-center">November 15, 2024</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">1 Hotel Brooklyn</span>
+        <span class="sm:col-span-1 text-center">May 26, 2025</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">1 Hotel Brooklyn</span>
+        <span class="sm:col-span-1 text-center">August 17, 2025</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">Unveiled</span>
+        <span class="sm:col-span-1 text-center">November 7, 2025</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">Laissez Faire</span>
+        <span class="sm:col-span-1 text-center">February 20, 2026</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">Laissez Faire</span>
+        <span class="sm:col-span-1 text-center">April 17, 2026</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">1 Hotel Brooklyn</span>
+        <span class="sm:col-span-1 text-center">May 10, 2026</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+      <li class="grid grid-cols-1 items-center gap-y-1 px-0 py-3 text-xs sm:grid-cols-3 sm:gap-8 sm:text-sm">
+        <span class="sm:col-span-1 text-center sm:text-left">Palosanto</span>
+        <span class="sm:col-span-1 text-center">May 28, 2026</span>
+        <span class="sm:col-span-1 text-center sm:text-right">New York, US</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="mt-auto bg-white/80 backdrop-blur py-8">
+    <div class="mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-6 px-4">
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="https://www.instagram.com/ozzi_music/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="transition hover:scale-110 hover:text-black/70"><img src="https://cdn.simpleicons.org/instagram/000000" alt="Instagram" class="h-4 w-4" loading="lazy"></a>
+        <a href="https://www.beatport.com/artist/ozzi-ny/1145644" target="_blank" rel="noopener noreferrer" aria-label="Beatport" class="transition hover:scale-110 hover:text-black/70"><img src="https://cdn.simpleicons.org/beatport/000000" alt="Beatport" class="h-4 w-4" loading="lazy"></a>
+        <a href="https://soundcloud.com/ozzi_music" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud" class="transition hover:scale-110 hover:text-black/70"><img src="https://cdn.simpleicons.org/soundcloud/000000" alt="SoundCloud" class="h-4 w-4" loading="lazy"></a>
+        <a href="https://open.spotify.com/artist/0tChjx6JYixwx9JJDBShEk?si=0X0uXyJHS8ullOmTQjF2SQ" target="_blank" rel="noopener noreferrer" aria-label="Spotify" class="transition hover:scale-110 hover:text-black/70"><img src="https://cdn.simpleicons.org/spotify/000000" alt="Spotify" class="h-4 w-4" loading="lazy"></a>
+        <a href="https://ozzi.bandcamp.com" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp" class="transition hover:scale-110 hover:text-black/70"><img src="https://cdn.simpleicons.org/bandcamp/000000" alt="Bandcamp" class="h-4 w-4" loading="lazy"></a>
+        <a href="https://www.youtube.com/@ozzi_music" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="transition hover:scale-110 hover:text-black/70"><img src="https://cdn.simpleicons.org/youtube/000000" alt="YouTube" class="h-4 w-4" loading="lazy"></a>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-xs uppercase tracking-wide text-black/70">
+        <a href="#" class="hover:underline underline-offset-4">Contact</a>
+        <a href="#" class="hover:underline underline-offset-4">Imprint</a>
+        <a href="#" class="hover:underline underline-offset-4">Privacy Policy</a>
+        <span>© 2025 Ozzi Music</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
